@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 30px;
+            height: 28px;
+            display:inline-flex;
+            animation-name: colorchange;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            margin: 50px;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes colorchange{
+            from{
+                background-color: rgb(255, 36, 7);
+                transform: translateY(0px);
+                height: 10px;
+            }
+            to{
+                background-color: rgb(4, 0, 255);
+                transform: translateY(0px);
+                height: 100px;
+                width: 30px;
+            }
+        }
+        .hello{
+            display: flex;
+            flex-direction: row;
+            margin-top: 200px;
+            margin-left: 250px;
+            height: 250px;
+            position: absolute;
+        }
+        .div1{
+            background-color: aqua;
+            animation-delay: 0.1s;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+        }
+        .div2{
+            background-color: chartreuse;
+            animation-delay: 0.3s;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+        }
+        .div3{
+            background-color: rgb(25, 0, 255);
+            animation-delay: 0.5s;
+            position: absolute;
+            bottom: 0;
+            left: 60px;
+        }
+        .div4{
+            background-color: rgb(225, 255, 0);
+            animation-delay: 0.7s;
+            position: absolute;
+            bottom: 0;
+            left: 90px;
+        }
+        .div5{
+            background-color: rgb(255, 0, 0);
+            animation-delay: 0.9s;
+            position: absolute;
+            bottom: 0;
+            left: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hello">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    </section>
+</body>
+</html>

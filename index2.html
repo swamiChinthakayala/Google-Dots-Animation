@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+        background-color: red;
+        animation-name: colorchange;
+        animation-duration: 3s;
+        animation-iteration-count: 3s;
+    }
+    @keyframes colorchange{
+        0%{
+          transform: translateX(0px) translateY(0px);
+            background-color:yellow;
+        }
+        25%{
+            transform: translateX(200px) translateY(0px);
+            background-color: rgb(252, 224, 7);
+        }
+        50%{
+            transform: translateX(200px) translateY(200px);
+          background-color: blueviolet;
+        }
+        75%{
+            transform: translateX(0px) translateY(200px);
+            background-color: brown;
+        }
+        100%{
+            transform: translateX(0px) translateY(0px); 
+            background-color: darkgreen;
+        }
+
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
